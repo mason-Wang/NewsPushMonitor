@@ -1,8 +1,13 @@
 package com.wmx.newspushmonitor.util;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
+
+import com.wmx.newspushmonitor.GlobalConfig;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -28,7 +33,20 @@ public class LogWriter {
             "D/", "I/", "W/", "E/",
     };
 
+    public static String getLogSaveDir() {
+        return LOG_SAVEDIR;
+    }
+
     private static void writeLog(final String msg) {
+        if (!GlobalConfig.isRecordLog()) {
+            return;
+        }
+
+        if (ContextCompat.checkSelfPermission(GlobalConfig.mAppContext,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+
         if (mLogWriterHandler == null) {
             HandlerThread logThread = new HandlerThread("log_thread");
             logThread.start();

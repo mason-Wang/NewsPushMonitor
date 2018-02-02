@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">NewsPushMonitor</string>
+    <string name="start_service">开启新闻推送监听服务</string>
+    <string name="close_service">关闭新闻推送监听服务</string>
+    <string name="enable_app_autostart">开启应用唤醒</string>
+    <string name="disable_app_autostart">关闭应用唤醒</string>
+    <string name="setting">设置</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="record_log">记录日志</string>
+    <string name="record_log_summary">保存日志到/sdcard/pushmonitor目录</string>
+    <string name="wakeup_interval">被监控的APP唤起周期(单位分钟)</string>
+    <string name="wakeup_interval_summary">定期唤起被监控的APP，防止被系统Kill掉而监控不到通知</string>
+    <string name="wakeup_interval_title">唤起间隔</string>
+    <string name="clear_logs_title">清空日志</string>
+    <string name="clear_logs_summary">删除/sdcard/pushmonitor目录下所有日志</string>
+    
+    <string name="add_newapp_title">添加新的APP</string>
+    <string name="add_newapp_summary">添加新的需要监控的APP的包名</string>
+    <string name="title_view_id">标题View ID</string>
+    <string name="content_view_id">内容View ID</string>
+
+    <string name="wakeup_apps">自动唤起被监控应用</string>
+
+    <string name="monitor_apps_title">设置被监控的APP</string>
+
+    <string name="toast_log_clear">日志删除成功</string>
+
+    <string-array name="list_wakeup_interval_values">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <string name="accessibility_service_description">监控APP的推送，包括推送的时间、标题和内容</string>
 </resources>

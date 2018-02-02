@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="record_log_pref"
+        android:title="@string/record_log"
+        android:summary="@string/record_log_summary"
+        android:defaultValue="true"/>
+
+    <CheckBoxPreference
+        android:key="wakeup_apps_pref"
+        android:title="@string/wakeup_apps"
+        android:defaultValue="true"/>
+
+    <ListPreference
+        android:key="wakeup_interval_pref"
+        android:title="@string/wakeup_interval"
+        android:summary="@string/wakeup_interval_summary"
+        android:entries="@array/list_wakeup_interval_values"
+        android:entryValues="@array/list_wakeup_interval_values"
+        android:dialogTitle="@string/wakeup_interval_title"
+        android:defaultValue="30"/>
+
+    <Preference
+        android:key="clear_log_pref"
+        android:title="@string/clear_logs_title"
+        android:summary="@string/clear_logs_summary"
+        android:persistent="false"/>
+
+    <EditTextPreference
+        android:key="add_new_app_pref"
+        android:title="@string/add_newapp_title"
+        android:summary="@string/add_newapp_summary" />
+
+    <PreferenceCategory
+        android:key="monitor_apps_pref"
+        android:title="@string/monitor_apps_title"
+        android:persistent="false">
+    </PreferenceCategory>
+
+</PreferenceScreen>
