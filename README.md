@@ -5,3 +5,9 @@ NewsPushMonitor是一款可以监听手机上APP推送的通知的应用，可�
 - 定期自动唤起被监听APP
 - 自定义需要监听的APP列表  
 
+## 主页
+![home](https://github.com/mason-Wang/NewsPushMonitor/blob/master/imgs/home.png)
+
+## 设置页
+![settings](https://github.com/mason-Wang/NewsPushMonitor/blob/master/imgs/settings.png)
+
