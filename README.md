@@ -1,5 +1,5 @@
 # NewsPushMonitor
-NewsPushMonitor是一款可以监听手机上APP推送的通知的应用，可以帮助开发者调试自己APP的通知是否正常，或者收集统计各种APP的推送通知，包含以下功能：
+NewsPushMonitor是一款可以监听手机上APP推送通知的应用，可以帮助开发者调试自己APP的通知是否正常，或者收集统计各种APP的推送通知，包含以下功能：
 
 - 监听APP的推送通知，提取出标题和内容
 - 定期自动唤起被监听APP
