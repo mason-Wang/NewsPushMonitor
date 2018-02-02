@@ -70,7 +70,7 @@ public class PushMonitorAccessibilityService extends AccessibilityService {
     }
 
     private void commitNewsInfoToServer(final BaseNotificationParser.NewsInfo newsInfo) {
-        // TODO uploads notification infos to server
+        // TODO upload notification infos to server
     }
 
     private void showNewsInfo(BaseNotificationParser.NewsInfo newsInfo) {
